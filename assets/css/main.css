@@ -234,7 +234,8 @@
 	ul.icons {
 		cursor: default;
 		list-style: none;
-		padding-left: 0;
+		padding-left: 3;
+    margin: 3;
 	}
 
 		ul.icons li {
@@ -252,8 +253,14 @@
 				width: 2.25rem;
 			}
 
-				ul.icons li a:hover {
+        .label {
+          display: none;
+        }
+
+				ul.icons li a:hover + .label{
 					background-color: rgba(255, 255, 255, 0.075);
+          display: block;
+          color: white;
 				}
 
 				ul.icons li a:active {
@@ -820,10 +827,4 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.interests {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 5px;
 }
